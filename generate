@@ -11,7 +11,8 @@ const suffix = '</samp>'
 
 const gradientSteps = 5
 const gradientStepSize = h / gradientSteps
-const gradientWidthIncrease = 1.1
+// const gradientWidthIncrease = 1.1
+const gradientWidthIncrease = 20
 
 const stars = '⟡⋄.·+*..⋆✧ ·˚·..⠁⠂⠐⠠⡀⢀⠁⠂⠐⠠⡀⢀*·.✺·*⊹⊹⊹.'.split('').concat([
   '✨',
@@ -45,7 +46,7 @@ for (let y = 0; y < h; y++) {
     line = line.concat('<sub>')
     subLevel += 1
   }
-  for (let x = 0; x < w*Math.pow(gradientWidthIncrease, subLevel); x++) {
+  for (let x = 0; x < w+(gradientWidthIncrease*subLevel); x++) {
     if (moonPos[0]===x && moonPos[1]===y) {
       line = line.concat(getMoon())
       continue
