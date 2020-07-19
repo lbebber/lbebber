@@ -1,0 +1,22 @@
+#!/usr/bin/env node
+
+const w = 18
+const h = 8
+
+const lines = []
+
+for (let y = 0; y < w; y++) {
+  let line = ''
+  for (let x = 0; x < w; x++) {
+    line = line.concat(Math.random() < 0.2 ? '✨' : ' ')
+  }
+  lines.push(line)
+}
+
+let output = ''
+
+for (let line of lines) {
+  output = output.concat(line).concat('<br/>')
+}
+
+console.log(output)
