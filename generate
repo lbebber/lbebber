@@ -3,13 +3,13 @@
 const fs = require('fs')
 
 const w = 100
-const h = 25
+const h = 30
 const density = 0.04
 
 const prefix = '<samp>'
 const suffix = '</samp>'
 
-const gradientSteps = 5
+const gradientSteps = 10
 const gradientStepSize = h / gradientSteps
 // const gradientWidthIncrease = 1.1
 const gradientWidthIncrease = 10
