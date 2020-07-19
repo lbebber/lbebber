@@ -9,7 +9,7 @@ const density = 0.04
 const prefix = '<samp>'
 const suffix = '</samp>'
 
-const gradientSteps = 2
+const gradientSteps = 3
 const gradientStepSize = h / gradientSteps
 // const gradientWidthIncrease = 1.1
 const gradientWidthIncrease = 30
