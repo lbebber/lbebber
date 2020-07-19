@@ -6,8 +6,8 @@ const w = 80
 const h = 30
 const density = 0.04
 
-const prefix = '##<samp>'
-const suffix = '</samp>'
+const prefix = '<h2><samp>'
+const suffix = '</samp></h2>'
 
 const gradientSteps = 3
 const gradientStepSize = h / gradientSteps
