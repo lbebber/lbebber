@@ -44,7 +44,8 @@ const getUrl = () => `https://github.com/lbebber/lbebber/issues/new?labels=bug&t
 const getStar = () => {
   starNum++
   // return `[${getRandom(stars)}](${getUrl()})`
-  return getRandom(stars)
+  // return getRandom(stars)
+  return `[${getRandom(stars)}](#)`
 }
 const getMoon = () => getRandom(moon)
 const moonPos = [
@@ -63,8 +64,8 @@ for (let y = 0; y < h; y++) {
     if (namePos[1]===y && namePos[0]>=x && x<namePos[0]+name.length) {
       if (x === namePos[0]) {
         line = line.concat(name)
-        continue
       }
+      continue
     }
     if (moonPos[0]===x && moonPos[1]===y) {
       line = line.concat(getMoon())
