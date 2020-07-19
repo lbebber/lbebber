@@ -16,8 +16,8 @@ const gradientWidthIncrease = 1.35
 const name = "Lucas Bebber"
 
 const namePos = [
-  Math.round((w-name.length)/2),
-  h/2,
+  0,
+  5,
 ]
 
 const stars = '⟡⋄.·+*..⋆✧ ·˚·..⠁⠂⠐⠠⡀⢀⠁⠂⠐⠠⡀⢀*·.✺·*⊹⊹⊹.'.split('').concat([
