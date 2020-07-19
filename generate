@@ -45,8 +45,8 @@ const getUrl = () => `https://github.com/lbebber/lbebber/issues/new?labels=bug&t
 const getStar = () => {
   starNum++
   // return `[${getRandom(stars)}](${getUrl()})`
-  // return getRandom(stars)
-  return `[${getRandom(stars)}](#)`
+  return getRandom(stars)
+  // return `[${getRandom(stars)}](#)`
 }
 const getMoon = () => getRandom(moon)
 const moonPos = [
