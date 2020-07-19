@@ -1,7 +1,6 @@
 Hi
 
- a | b
+&nbsp;|&nbsp;
 ---|---
-b | c
-c | d
-d | e
+&nbsp;| c
+&nbsp;| d
