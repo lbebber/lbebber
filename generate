@@ -6,7 +6,7 @@ const w = 80
 const h = 30
 const density = 0.04
 
-const prefix = '<samp>'
+const prefix = '##<samp>'
 const suffix = '</samp>'
 
 const gradientSteps = 3
@@ -21,7 +21,7 @@ const namePos = [
   5,
 ]
 
-const stars = '⟡⋄.·+*..⋆✧ ·˚·..⠁⠂⠐⠠⡀⢀⠁⠂⠐⠠⡀⢀*·.✺·*⊹⊹⊹.'.split('').concat([
+const stars = '⟡⋄.·+*..⋆✧ ·✦✦˚·..⠁⠂⠐⠠⡀⢀⠁⠂⠐⠠⡀⢀*·.✺·*⊹⊹⊹.'.split('').concat([
   // '✨',
 ])
 

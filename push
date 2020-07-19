@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+./generate
+git commit -am 'Update'
+git push
