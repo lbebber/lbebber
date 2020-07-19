@@ -9,10 +9,10 @@ const density = 0.04
 const prefix = '<samp>'
 const suffix = '</samp>'
 
-const gradientSteps = 10
+const gradientSteps = 2
 const gradientStepSize = h / gradientSteps
 // const gradientWidthIncrease = 1.1
-const gradientWidthIncrease = 10
+const gradientWidthIncrease = 40
 
 const stars = '⟡⋄.·+*..⋆✧ ·˚·..⠁⠂⠐⠠⡀⢀⠁⠂⠐⠠⡀⢀*·.✺·*⊹⊹⊹.'.split('').concat([
   '✨',
