@@ -21,7 +21,7 @@ const namePos = [
 ]
 
 const stars = '⟡⋄.·+*..⋆✧ ·˚·..⠁⠂⠐⠠⡀⢀⠁⠂⠐⠠⡀⢀*·.✺·*⊹⊹⊹.'.split('').concat([
-  '✨',
+  // '✨',
 ])
 
 const moon=[
