@@ -1,6 +1,6 @@
 Hi
 
-   | a | b | c | d | e | f | g | h 
+ - | a | b | c | d | e | f | g | h 
 ---|---|---|---|---|---|---|---|---
  8 | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
  7 | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
