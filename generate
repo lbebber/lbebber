@@ -18,7 +18,7 @@ const getStar = () => stars[Math.round(Math.random()*(stars.length-1))]
 for (let y = 0; y < h; y++) {
   let line = ''
   for (let x = 0; x < w; x++) {
-    line = line.concat(Math.random() < 0.08 ? getStar() : '&nbsp;')
+    line = line.concat(Math.random() < 0.08 ? getStar() : ' ')
   }
   lines.push(line)
 }
