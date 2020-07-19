@@ -1,7 +1,17 @@
 #!/usr/bin/env node
 
+const fs = require('fs')
+
 const w = 28
 const h = 8
+
+const prefix = `Hi
+
+&nbsp;|&nbsp;
+---|---
+&nbsp;|&nbsp;
+&nbsp;| <samp>`
+const suffix = `</samp>`
 
 const lines = []
 
@@ -19,4 +29,6 @@ for (let line of lines) {
   output = output.concat(line).concat('<br/>')
 }
 
-console.log(output)
+output = prefix + output + suffix
+
+fs.writeFileSync('README.md', output)
