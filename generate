@@ -8,12 +8,7 @@ const h = 9
 const prefix = `<samp>`
 const suffix = `</samp>`
 
-const stars = [
-  '✨',
-  '⭐️',
-  '🌟',
-  '💫',
-]
+const stars = '.·+*..⋆✧ ˚·....✺·*⊹.'
 
 const lines = []
 
@@ -35,3 +30,5 @@ for (let line of lines) {
 output = prefix + output + suffix
 
 fs.writeFileSync('README.md', output)
+
+console.log(output.replace(/&nbsp;/g, ' ').replace(/<br\/>/g, '\n'))
