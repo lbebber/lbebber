@@ -2,8 +2,8 @@
 
 const fs = require('fs')
 
-const w = 80
-const h = 30
+const w = 40
+const h = 20
 const density = 0.04
 
 const prefix = '<h2><samp>'
@@ -30,9 +30,9 @@ const moon=[
 ]
 
 const escapeChar = input => {
-  if (input === '*') {
-    return '\\*'
-  }
+  // if (input === '*') {
+  //   return '\\*'
+  // }
   return input
 }
 const lines = []
