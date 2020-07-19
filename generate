@@ -2,8 +2,8 @@
 
 const fs = require('fs')
 
-const w = 80
-const h = 9
+const w = 100
+const h = 13
 
 const prefix = '```'
 const suffix = '```'
@@ -12,12 +12,28 @@ const stars = '⟡⋄.·+*..⋆✧ ·˚·..⠁⠂⠐⠠⡀⢀⠁⠂⠐⠠⡀⢀*
   '✨',
 ])
 
+const moon=[
+  '🌙',
+]
+
 const lines = []
 
-const getStar = () => stars[Math.round(Math.random()*(stars.length-1))]
+const getRandom = source => source[Math.round(Math.random()*(source.length-1))]
+
+const getStar = () => getRandom(stars)
+const getMoon = () => getRandom(moon)
+const moonPos = [
+  Math.round(Math.random()*w),
+  Math.round(Math.random()*h),
+]
+
 for (let y = 0; y < h; y++) {
   let line = ''
   for (let x = 0; x < w; x++) {
+    if (moonPos[0]===x && moonPos[1]===y) {
+      line = line.concat(getMoon())
+      continue
+    }
     line = line.concat(Math.random() < 0.08 ? getStar() : ' ')
   }
   lines.push(line)
