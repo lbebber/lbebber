@@ -2,7 +2,7 @@
 
 const fs = require('fs')
 
-const w = 100
+const w = 80
 const h = 30
 const density = 0.04
 
@@ -11,8 +11,7 @@ const suffix = '</samp>'
 
 const gradientSteps = 3
 const gradientStepSize = h / gradientSteps
-// const gradientWidthIncrease = 1.1
-const gradientWidthIncrease = 30
+const gradientWidthIncrease = 1.25
 
 const stars = '⟡⋄.·+*..⋆✧ ·˚·..⠁⠂⠐⠠⡀⢀⠁⠂⠐⠠⡀⢀*·.✺·*⊹⊹⊹.'.split('').concat([
   '✨',
@@ -46,7 +45,7 @@ for (let y = 0; y < h; y++) {
     line = line.concat('<sub>')
     subLevel += 1
   }
-  for (let x = 0; x < w+(gradientWidthIncrease*subLevel); x++) {
+  for (let x = 0; x < w*Math.pow(gradientWidthIncrease,subLevel); x++) {
     if (moonPos[0]===x && moonPos[1]===y) {
       line = line.concat(getMoon())
       continue
