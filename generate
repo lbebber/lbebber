@@ -26,7 +26,7 @@ for (let y = 0; y < h; y++) {
 let output = ''
 
 for (let line of lines) {
-  output = output.concat(line).concat('<br/>')
+  output = output.concat(line).concat('\n')
 }
 
 output = prefix + output + suffix
