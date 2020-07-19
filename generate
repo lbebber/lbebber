@@ -5,8 +5,8 @@ const fs = require('fs')
 const w = 100
 const h = 13
 
-const prefix = '```'
-const suffix = '```'
+const prefix = '<samp>'
+const suffix = '</samp>'
 
 const stars = '⟡⋄.·+*..⋆✧ ·˚·..⠁⠂⠐⠠⡀⢀⠁⠂⠐⠠⡀⢀*·.✺·*⊹⊹⊹.'.split('').concat([
   '✨',
@@ -34,7 +34,7 @@ for (let y = 0; y < h; y++) {
       line = line.concat(getMoon())
       continue
     }
-    line = line.concat(Math.random() < 0.08 ? getStar() : ' ')
+    line = line.concat(Math.random() < 0.08 ? getStar() : '&nbsp;')
   }
   lines.push(line)
 }
@@ -42,7 +42,7 @@ for (let y = 0; y < h; y++) {
 let output = ''
 
 for (let line of lines) {
-  output = output.concat(line).concat('\n')
+  output = output.concat(line).concat('<br/>')
 }
 
 output = prefix + output + suffix
