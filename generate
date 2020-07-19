@@ -31,7 +31,7 @@ const lines = []
 
 const getRandom = source => escapeChar(source[Math.round(Math.random()*(source.length-1))])
 
-const getStar = () => getRandom(stars)
+const getStar = () => `[${getRandom(stars)}](#)`
 const getMoon = () => getRandom(moon)
 const moonPos = [
   Math.round(Math.random()*w),
