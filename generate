@@ -5,12 +5,7 @@ const fs = require('fs')
 const w = 28
 const h = 8
 
-const prefix = `Hi
-
-&nbsp;|&nbsp;
----|---
-&nbsp;|&nbsp;
-&nbsp;| <samp>`
+const prefix = `<samp>`
 const suffix = `</samp>`
 
 const lines = []
