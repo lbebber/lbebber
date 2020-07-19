@@ -9,6 +9,9 @@ const density = 0.04
 const prefix = '<samp>'
 const suffix = '</samp>'
 
+const gradientSteps = 5
+const gradientStepSize = h / gradientSteps
+
 const stars = '⟡⋄.·+*..⋆✧ ·˚·..⠁⠂⠐⠠⡀⢀⠁⠂⠐⠠⡀⢀*·.✺·*⊹⊹⊹.'.split('').concat([
   '✨',
 ])
@@ -36,6 +39,9 @@ const moonPos = [
 
 for (let y = 0; y < h; y++) {
   let line = ''
+  if (y>0 && y%gradientStepSize === 0) {
+    line = line.concat('<sub>')
+  }
   for (let x = 0; x < w; x++) {
     if (moonPos[0]===x && moonPos[1]===y) {
       line = line.concat(getMoon())
@@ -52,7 +58,8 @@ for (let line of lines) {
   output = output.concat(line).concat('<br/>')
 }
 
-output = prefix + output + suffix
+const gradientEnd = Array.from({ length: gradientSteps }).map(_ => '</sub>').join('')
+output = prefix + output + gradientEnd + suffix
 
 fs.writeFileSync('README.md', output)
 
