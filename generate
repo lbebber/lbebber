@@ -8,7 +8,7 @@ const lines = []
 for (let y = 0; y < w; y++) {
   let line = ''
   for (let x = 0; x < w; x++) {
-    line = line.concat(Math.random() < 0.2 ? '✨' : ' ')
+    line = line.concat(Math.random() < 0.2 ? '✨' : '&nbsp;')
   }
   lines.push(line)
 }
