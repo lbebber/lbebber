@@ -2,8 +2,8 @@
 
 const fs = require('fs')
 
-const w = 55
-const h = 20
+const w = 60
+const h = 21
 const density = 0.04
 
 const prefix = '<h2><samp>'
