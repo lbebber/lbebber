@@ -50,7 +50,7 @@ for (let y = 0; y < h; y++) {
       line = line.concat(getMoon())
       continue
     }
-    line = line.concat(Math.random() < density ? getStar() : '[&nbsp;](#)')
+    line = line.concat(Math.random() < density ? getStar() : '&nbsp;')
   }
   lines.push(line)
 }
