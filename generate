@@ -16,9 +16,15 @@ const moon=[
   '🌙',
 ]
 
+const escapeChar = input => {
+  if (input === '*') {
+    return '\*'
+  }
+  return input
+}
 const lines = []
 
-const getRandom = source => source[Math.round(Math.random()*(source.length-1))]
+const getRandom = source => escapeChar(source[Math.round(Math.random()*(source.length-1))])
 
 const getStar = () => getRandom(stars)
 const getMoon = () => getRandom(moon)
