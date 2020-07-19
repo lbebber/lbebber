@@ -10,13 +10,13 @@ const prefix = '<h2><samp>'
 const suffix = '</samp></h2>'
 
 const levels = [
-  [`<h2><samp>`, `</samp></h2>`],
-  [`<h2><samp><sub>`, `</sub></samp></h2>`],
-  [`<h2><samp><sub><sub>`, `</sub></sub></samp></h2>`],
+  [`<h3><samp>`, `</samp></h3>`],
+  [`<h3><samp><sub>`, `</sub></samp></h3>`],
+  [`<h3><samp><sub><sub>`, `</sub></sub></samp></h3>`],
   [`<samp>`, `</samp>`],
 ]
 
-const gradientSteps = 3
+const gradientSteps = 4
 const gradientStepSize = h / gradientSteps
 const gradientWidthIncrease = 1.35
 
