@@ -1,6 +1,6 @@
 Hi
 a | b
 ---
-- [x] 1
-- [ ] 2
-- [ ] &nbsp;
+- [x] 1 | hm
+- [ ] 2 | hmm
+- [ ] &nbsp; | hmmm
