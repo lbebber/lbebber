@@ -11,7 +11,7 @@ const suffix = '</samp>'
 
 const gradientSteps = 3
 const gradientStepSize = h / gradientSteps
-const gradientWidthIncrease = 1.25
+const gradientWidthIncrease = 1.35
 
 const stars = '⟡⋄.·+*..⋆✧ ·˚·..⠁⠂⠐⠠⡀⢀⠁⠂⠐⠠⡀⢀*·.✺·*⊹⊹⊹.'.split('').concat([
   '✨',
