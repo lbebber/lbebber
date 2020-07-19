@@ -9,6 +9,13 @@ const density = 0.04
 const prefix = '<h2><samp>'
 const suffix = '</samp></h2>'
 
+const levels = [
+  [`<h2><samp>`, `</samp></h2>`],
+  [`<h2><samp><sub>`, `</sub></samp></h2>`],
+  [`<h2><samp><sub><sub>`, `</sub></sub></samp></h2>`],
+  [`<samp>`, `</samp>`],
+]
+
 const gradientSteps = 3
 const gradientStepSize = h / gradientSteps
 const gradientWidthIncrease = 1.35
@@ -58,9 +65,9 @@ const moonPos = [
 let subLevel = 0
 for (let y = 0; y < h; y++) {
   let line = ''
-  if (y>0 && y%gradientStepSize === 0) {
-    line = line.concat('<sub>')
-    subLevel += 1
+  if (y%gradientStepSize === 0) {
+    line = line.concat(levels[subLevel][0])
+    // subLevel += 1
   }
   for (let x = 0; x < w*Math.pow(gradientWidthIncrease,subLevel); x++) {
     if (namePos[1]===y && x >= namePos[0] && x<namePos[0]+name.length) {
@@ -74,6 +81,10 @@ for (let y = 0; y < h; y++) {
       continue
     }
     line = line.concat(Math.random() < density ? getStar() : '&nbsp;')
+  }
+  if (y%gradientStepSize === gradientStepSize-1) {
+    line = line.concat(levels[subLevel][1])
+    subLevel += 1
   }
   lines.push(line)
 }
@@ -89,7 +100,8 @@ let reflection = `<code>${output}</code>`
 output = output.concat(reflection)
 
 const gradientEnd = Array.from({ length: gradientSteps }).map(_ => '</sub>').join('')
-output = prefix + output + gradientEnd + suffix
+// output = prefix + output + gradientEnd + suffix
+// output = output
 
 fs.writeFileSync('README.md', output)
 
