@@ -2,5 +2,5 @@ Hi
 
 &nbsp;|&nbsp;
 ---|---
-&nbsp;| c
-&nbsp;| d
+&nbsp;|&nbsp;
+&nbsp;| <samp>oi</samp>
