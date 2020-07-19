@@ -8,7 +8,7 @@ const h = 9
 const prefix = `<samp>`
 const suffix = `</samp>`
 
-const stars = '⟡⋄⟢.·+*..⋆✧ ⋄·˚·..⠁⠂⠐⠠⡀⢀⠁⠂⠐⠠⡀⢀*·.✺·*⊹⊹⊹.'.split('').concat([
+const stars = '⟡⋄.·+*..⋆✧ ·˚·..⠁⠂⠐⠠⡀⢀⠁⠂⠐⠠⡀⢀*·.✺·*⊹⊹⊹.'.split('').concat([
   '✨',
 ])
 
