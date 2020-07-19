@@ -3,7 +3,4 @@ Hi
 &nbsp;|&nbsp;
 ---|---
 &nbsp;|&nbsp;
-&nbsp;| <samp>oi
-hmm
-hmm2
-</samp>
+&nbsp;| <samp>oi hmm \n hmm2 </samp>
